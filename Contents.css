@@ -1,0 +1,171 @@
+body {
+    background-color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    color: Black;
+    text-align: left;
+    font-family: Optima, sans-serif;
+    margin-top: 80px;
+    margin-left: 80px;
+    text-shadow: 1px 1px 2px grey;
+}
+
+h1 a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: left 0.3s;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 999;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: lightgrey;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+p {
+    font-family: Optima, sans-serif;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+p.Title {
+    text-shadow: 1px 1px 2px grey;
+    font-family: Optima, sans-serif;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.List {
+    background-color: lightgrey;
+    max-width: 90%;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 30px 20px;
+    font-family: Optima, sans-serif;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px black;
+}
+
+.bordered li a {
+    color: black;
+    text-decoration: none;
+}
+
+.bordered li{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.3 ease;
+}
+
+.bordered li:hover{
+    background-color: grey;
+}
+
+.book-review {
+    background-color: lightgrey;
+    max-width: 90%;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 30px 20px 30px 20px;
+    font-family: Optima, sans-serif;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.book-review p {
+    font-size: 18px;
+    color: black;
+}
+
+.title {
+    background-color: white;
+    width:100%;
+    max-width: 958px;
+    height: fit-content;
+    padding: 10px auto;
+    margin-bottom: 40px;
+    font-family: Optima, sans-serif;
+    text-align: center;
+    box-shadow: 10px 10px 20px black;
+}
+
+
+.article {
+    background-color: white;
+    width:100%;
+    max-width: 958px;
+    height: fit-content;
+    padding: 10px auto;
+    margin: 0;
+    font-family: Optima, sans-serif;
+    white-space: pre-line;
+}
